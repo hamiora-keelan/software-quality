@@ -38,7 +38,7 @@ const SingleAnimal = () => {
     <div>
       <h1>{animal.name}</h1>
       <span className="animal-image-box">
-        <img src={animal.image} alt={animal.name} className="animal-image" />
+        <img src={animal.image} alt="" className="animal-image" />
       </span>
 
       <p>Species: {animal.species}</p>

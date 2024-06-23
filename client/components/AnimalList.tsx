@@ -14,11 +14,7 @@ const AnimalComponent = () => {
         {animals.map((animal) => (
           <li key={animal.id} className="animal-item">
             <div className="animal-image-box">
-              <img
-                src={animal.image}
-                alt={animal.name}
-                className="animal-image"
-              />
+              <img src={animal.image} alt="" className="animal-image" />
             </div>
             <div className="animal-info">
               <p>

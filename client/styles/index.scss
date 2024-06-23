@@ -1,6 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
-html, 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #064c2f;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #FFD700;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.animal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.animal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.animal-image-box {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.animal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.animal-info button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
 }

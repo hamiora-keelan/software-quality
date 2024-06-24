@@ -21,30 +21,42 @@ const AddAnimalComponent = () => {
 
   return (
     <div>
-      <h2>Add a new animal</h2>
+      <h1>Add a new animal</h1>
       {error && <div>{error}</div>}
       <div>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={newAnimal.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="species"
-          placeholder="Species"
-          value={newAnimal.species}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image URL"
-          value={newAnimal.image}
-          onChange={handleChange}
-        />
+        <div>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value={newAnimal.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="species">Species</label>
+          <input
+            type="text"
+            id="species"
+            name="species"
+            placeholder="Species"
+            value={newAnimal.species}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="image">Image URL</label>
+          <input
+            type="text"
+            id="image"
+            name="image"
+            placeholder="Image URL"
+            value={newAnimal.image}
+            onChange={handleChange}
+          />
+        </div>
         <button onClick={handleAdd}>Add Animal</button>
       </div>
     </div>
